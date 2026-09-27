@@ -1,35 +1,79 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Agrim Sharma, data engineer and computer engineering student at the University of Toronto.">
+  <meta property="og:title" content="Agrim Sharma">
+  <meta property="og:description" content="Data engineer and computer engineering student at the University of Toronto.">
+  <meta property="og:image" content="https://agrimshar.com/me.jpg">
+  <meta property="og:url" content="https://agrimshar.com/">
   <title>Agrim Sharma</title>
 </head>
 
 <body>
   <img src="me.jpg" alt="A picture of Agrim Sharma" height="200" />
   <h1>Agrim Sharma</h1>
-  <p>Hi! I'm currently a computer engineering student at the University of Toronto. I'm interested in building stuff that works. I have a ton of ideas, and I like it when they come to life. I also enjoy going to the gym, martial arts, and hiking.</p>
-  <h2>My Projects</h2>
-  <p>Here are some of the projects I've worked on. Some of them were for school, and others were just for fun.</p>
+  <p>Hi! I'm a data engineer and a fourth-year computer engineering student at the University of Toronto, graduating in April 2027. I'm also president of the ECE Club. I'm interested in building stuff that works. I have a ton of ideas, and I like it when they come to life. When I'm not building, I go to the gym, train martial arts, and hike.</p>
+  <p>I'm looking for a full-time data engineering role starting in 2027. If you're hiring, <a href="mailto:agrimsharma2004@gmail.com">email me</a>.</p>
+
+  <h2>Work</h2>
+  <h3>Associate Data Engineer, Flipp</h3>
+  <p>16 months on a 10-person team.</p>
   <ul>
-    <li><a href="https://github.com/agrimshar/tcpserver" target="_blank">TCP Server</a></li>
-    <li><a href="https://github.com/agrimshar/toralize" target="_blank">Toralize</a></li>
-    <li><a href="https://github.com/agrimshar/custom-ext2-filesystem" target="_blank">Custom Ext2 Filesystem</a></li>
-    <li><a href="https://github.com/agrimshar/thread-safe-hash-table" target="_blank">Thread Safe Hash Table</a></li>
-    <li><a href="https://github.com/agrimshar/user-threads" target="_blank">User Threads Library</a></li>
-    <li><a href="https://github.com/agrimshar/Fork-Simulator" target="_blank">Fork Simulator</a></li>
-    <li><a href="https://github.com/agrimshar/Process-Manager" target="_blank">Subreaper/Process Manager</a></li>
-    <li><a href="https://github.com/agrimshar/Process-Viewer" target="_blank">Process Viewer</a></li>
-    <li><a href="https://github.com/agrimshar/password-manager" target="_blank">Password Manager with Custom AES</a></li>
-    <li><a href="https://github.com/agrimshar/flaskr-tdd" target="_blank">Flask Blog Application</a></li>
-    <li><a href="https://github.com/agrimshar/ArcGIS-Mapper" target="_blank">Large Scale GIS System</a></li>
-    <li><a href="https://github.com/agrimshar/ChatBox" target="_blank">DE1-SoC Chatbox</a></li>
-    <li><a href="https://github.com/agrimshar/No-Internet-Dinosaur-Game-FPGA" target="_blank">No Internet Dinosaur Game on FPGA</a></li>
-    <li><a href="https://github.com/agrimshar/Reversi" target="_blank">Reversi AI</a></li>
-    <li><a href="https://github.com/agrimshar/Experimental-Database" target="_blank">Linked List Database</a></li>
+  <li>Built medallion (bronze, silver, gold) Delta Lake pipelines on Databricks in Spark and Scala, and modelled SCD Type 2 dimensions and star schemas in the gold layer.</li>
+  <li>Delivered a Databricks runtime migration two months early. Jobs run 33% faster and cost about 8% less.</li>
+  <li>Reduced on-call alert noise for the team.</li>
+  <li>Built ship-ticket, an AI agent workflow that the whole team adopted.</li>
   </ul>
+  
+  <h3>Founder and Engineer, <a href="https://www.gooutapp.site/" target="_blank">Go Out</a></h3>
+  <p>A venue discovery app, on the App Store with 500+ DAU. Built with React Native, Expo, TypeScript, Supabase, and Mapbox. I built it with AI coding agents inside a workflow of test-driven development, human review, custom skills, and strict context management.</p>
+  
+  <h2>My Projects</h2>
+  <dl>
+    <dt><a href="https://github.com/agrimshar/s2-warehouse" target="_blank">Sentinel-2 Satellite Data Warehouse</a></dt>
+    <dd>Turns satellite images of the GTA into a table of vegetation per H3 cell per date, to find where the region lost green between summer 2022 and summer 2026. Python, PySpark, Delta Lake, dbt on DuckDB, Airflow 3, S3, and GitHub Actions. The answer so far was actually not what I expected... summer 2026 was greener overall, showing that the GTA has been getting more green over the past 5 years, which was surprising.</dd>
+    <dt><a href="https://thewartimereport.com" target="_blank">The Wartime Report</a></dt>
+    <dd>A daily briefing on the 2026 Iran war, researched and written by a pipeline of Claude agents that pull and cross-check reporting from wire services and major outlets. 200+ daily reports since February 2026.</dd>
+    <dt><a href="https://github.com/agrimshar/agentpkg" target="_blank">agentpkg</a></dt>
+    <dd>Write an AI agent once, then compile it for Claude Code, Cursor, Copilot, Windsurf, CrewAI, OpenAI, or APM.</dd>
+    <dt><a href="https://github.com/crynta/terax-ai/pulls?q=is%3Apr+author%3Aagrimshar+is%3Amerged" target="_blank">terax-ai (contributor)</a></dt>
+    <dd>Merged a Rust pull request into this open-source AI terminal workspace.</dd>
+    <dt>AEGIS (capstone, in progress)</dt>
+    <dd>A wearable AI survival system for the backcountry that runs fully offline: AR glasses, heart-rate, environmental, and audio sensors, and on-device inference on a Coral Edge TPU. I'm working on cleaning and processing the raw sensor data for the model as well as developing a survival RAG database that can be queried by voice.</dd>
+  </dl>
+   
+  <details>
+    <summary>Older projects</summary>
+    <p>Some of these were for school, and others were just for fun.</p>
+    <ul>
+      <li><a href="https://github.com/agrimshar/tcpserver" target="_blank">TCP Server</a></li>
+      <li><a href="https://github.com/agrimshar/toralize" target="_blank">Toralize</a></li>
+      <li><a href="https://github.com/agrimshar/custom-ext2-filesystem" target="_blank">Custom Ext2 Filesystem</a></li>
+      <li><a href="https://github.com/agrimshar/thread-safe-hash-table" target="_blank">Thread Safe Hash Table</a></li>
+      <li><a href="https://github.com/agrimshar/user-threads" target="_blank">User Threads Library</a></li>
+      <li><a href="https://github.com/agrimshar/Fork-Simulator" target="_blank">Fork Simulator</a></li>
+      <li><a href="https://github.com/agrimshar/Process-Manager" target="_blank">Subreaper/Process Manager</a></li>
+      <li><a href="https://github.com/agrimshar/Process-Viewer" target="_blank">Process Viewer</a></li>
+      <li><a href="https://github.com/agrimshar/flaskr-tdd" target="_blank">Flask Blog Application</a></li>
+      <li><a href="https://github.com/agrimshar/ArcGIS-Mapper" target="_blank">Large Scale GIS System</a></li>
+      <li><a href="https://github.com/agrimshar/ChatBox" target="_blank">DE1-SoC Chatbox</a></li>
+      <li><a href="https://github.com/agrimshar/No-Internet-Dinosaur-Game-FPGA" target="_blank">No Internet Dinosaur Game on FPGA</a></li>
+      <li><a href="https://github.com/agrimshar/Reversi" target="_blank">Reversi AI</a></li>
+      <li><a href="https://github.com/agrimshar/Experimental-Database" target="_blank">Linked List Database</a></li>
+    </ul>
+  </details>
+
+  <h2>Skills</h2>
+    <ul>
+    <li>Languages: Python, SQL, Scala, Java, C/C++, TypeScript</li>
+    <li>Data: Spark (PySpark and Scala), Databricks, Delta Lake, Kafka, Airflow, dbt, DuckDB</li>
+    <li>Cloud and tools: AWS (S3, EC2), Docker, Linux, GitHub Actions</li>
+    <li>Apps: React Native, Expo, Node.js, Supabase, Mapbox</li>
+    <li>AI: Claude Code, MCP servers, multi-agent pipelines</li>
+  </ul>
+  
   <h2>My Links</h2>
   <p>If you'd like to connect, or learn more about me, please click on any of the links below.</p>
   <ul>
@@ -38,10 +82,12 @@
     <li><a href="https://www.discord.com/users/heyreaper" target="_blank">Discord</a></li>
     <li><a href="mailto:agrimsharma2004@gmail.com" target="_blank">Email</a></li>
   </ul>
+  
   <h2>My Thoughts</h2>
   <ul>
     <li><a href="notes.html">My notes</a></li>
   </ul>
+  
 </body>
 
 </html>
